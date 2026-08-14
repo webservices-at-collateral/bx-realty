@@ -82,7 +82,7 @@ export default function BxRealtyHero() {
         <div className="mt-10 flex items-center gap-2">
           <span className="h-2 w-2 bg-white" />
           <span
-            className="text-xs font-medium uppercase tracking-[0.15em] text-white"
+            className="text-xs font-medium text-white"
             style={{ fontFamily: "var(--font-produkt), Arial, sans-serif" }}
           >
             Coming Soon
