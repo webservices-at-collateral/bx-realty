@@ -88,7 +88,7 @@ export default function BxRealtyHero() {
               fontSize: "16px",
             }}
           >
-            Coming Soon
+            Coming soon
           </span>
         </div>
       </div>
