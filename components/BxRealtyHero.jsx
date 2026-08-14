@@ -80,10 +80,13 @@ export default function BxRealtyHero() {
 
         {/* Badge */}
         <div className="mt-10 flex items-center gap-2">
-          <span className="h-2 w-2 bg-white" />
+          <span className="h-2 w-2 bg-[#F57E29]" />
           <span
             className="text-xs font-medium text-white"
-            style={{ fontFamily: "var(--font-produkt), Arial, sans-serif" }}
+            style={{
+              fontFamily: "var(--font-produkt), Arial, sans-serif",
+              fontSize: "16px",
+            }}
           >
             Coming Soon
           </span>
