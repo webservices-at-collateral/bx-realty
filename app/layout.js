@@ -2,15 +2,15 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const produkt = localFont({
-  src: "./fonts/produkt-regular.woff2",
-  variable: "--font-produkt",
+  src: "../public/fonts/produkt-regular.woff2",
   weight: "400",
   style: "normal",
+  variable: "--font-produkt",
   display: "swap",
 });
 
 export const metadata = {
-  title: "BX Realty — Forward Thinking Acquisitions",
+  title: "BX Realty — Forward Thinking, Acquisitions",
   description:
     "A real estate platform that buys undervalued and transitional assets, then manages them on-site rather than handing them off.",
 };

@@ -1,108 +1,29 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>BX Realty — Forward Thinking, Acquisitions</title>
-<meta name="description" content="A real estate platform that buys undervalued and transitional assets, then manages them on-site rather than handing them off." />
+import React from "react";
 
-<style>
-  @font-face {
-    font-family: 'Produkt';
-    src: url('./fonts/produkt-regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
+/**
+ * BX Realty v3 — Hero Section
+ * Implementado a partir do Figma (node 74:86 — "BX Realty" v3)
+ * https://www.figma.com/design/Nsf5sTZVQZUnpNVyxlHeeb/BX-Capital--Website-Covers?node-id=74-86
+ *
+ * Layout alinhado à esquerda, com foto de gráfico de mercado financeiro
+ * (recorte em seta) como background full-bleed. O logo já vem composto
+ * no Figma com o wordmark "Bx Realty" + o subtítulo
+ * "Forward Thinking > Acquisitions" num único SVG.
+ *
+ * Fonte: Produkt (parágrafo), carregada via next/font em app/layout.js
+ * e exposta como a CSS variable --font-produkt.
+ */
 
-  * {
-    box-sizing: border-box;
-  }
-
-  html, body {
-    margin: 0;
-    padding: 0;
-  }
-
-  .hero {
-    position: relative;
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    align-items: center;
-    overflow: hidden;
-    padding: 96px 24px;
-    background: linear-gradient(90deg, #994000 0%, #3D1A00 100%);
-  }
-
-  @media (min-width: 640px) {
-    .hero {
-      padding: 96px 64px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .hero {
-      padding: 96px 112px;
-    }
-  }
-
-  .hero__bg {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: auto;
-    object-fit: contain;
-    object-position: right;
-    pointer-events: none;
-  }
-
-  .hero__content {
-    position: relative;
-    z-index: 10;
-    display: flex;
-    width: 100%;
-    max-width: 524px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 48px;
-    text-align: left;
-  }
-
-  .hero__lockup {
-    height: 72px;
-    width: auto;
-  }
-
-  @media (min-width: 640px) {
-    .hero__lockup {
-      height: 96px;
-    }
-  }
-
-  .hero__paragraph {
-    max-width: 524px;
-    font-family: 'Produkt', serif;
-    font-weight: 400;
-    font-size: 16px;
-    font-style: normal;
-    line-height: 1.4;
-    color: rgba(255, 255, 255, 0.72);
-    text-align: left;
-    margin: 0;
-  }
-</style>
-</head>
-<body>
-
-<section class="hero">
-  <img class="hero__bg" src="./images/hero-realty.png" alt="" aria-hidden="true" />
-
-  <div class="hero__content">
-
-    <!-- Lockup: logo "Bx Realty" + "Forward Thinking > Acquisitions" (SVG real, composto no Figma) -->
-    <svg class="hero__lockup" viewBox="0 0 300 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bx Realty — Forward Thinking, Acquisitions">
+function BxRealtyLockup({ className }) {
+  return (
+    <svg
+      viewBox="0 0 300 96"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      role="img"
+      aria-label="Bx Realty — Forward Thinking, Acquisitions"
+    >
 <g id="Vector">
 <path d="M75.0246 54.2737V47.3211H80.6361V10.4996H75.0246V3.54699H97.9627C109.041 3.54699 116.568 7.94579 116.568 18.3037V18.588C116.568 25.9665 111.809 30.7199 105.418 31.9967L115.858 47.3209H120.118V54.2735H109.822L96.1879 33.4864H90.0805V47.3209H95.8311V54.2735L75.0246 54.2737ZM97.6791 26.8174C104.141 26.8174 107.336 24.0509 107.336 18.5169V18.2335C107.336 12.7699 103.715 10.4996 97.6791 10.4996H90.0805V26.8174H97.6791Z" fill="white"/>
 <path d="M122.456 36.1115V35.544C122.456 24.051 130.338 16.3883 140.919 16.3883C150.08 16.3883 158.46 21.8511 158.46 35.1181V37.6726H131.26C131.546 44.8381 135.026 48.5981 141.486 48.5981C146.671 48.5981 149.37 46.5408 150.009 42.9223H158.246C157.038 50.7969 150.861 54.983 141.274 54.983C130.267 54.983 122.456 47.7472 122.456 36.1115ZM149.937 31.7839C149.44 25.5406 146.316 22.6316 140.919 22.6316C135.736 22.6316 132.256 26.1083 131.403 31.7839H149.937Z" fill="white"/>
@@ -144,14 +65,44 @@
 </g>
 
     </svg>
+  );
+}
 
-    <!-- Paragraph -->
-    <p class="hero__paragraph">
-      A real estate platform that buys undervalued and transitional assets, then manages them on-site rather than handing them off. That ownership work sharpens how BX Capital underwrites and turns up deals for BX Equity.
-    </p>
+export default function BxRealtyHeroV3() {
+  return (
+    <section
+      className="relative flex h-screen w-full items-center overflow-hidden px-6 py-24 sm:px-16 lg:px-28"
+      style={{ background: "linear-gradient(90deg, #994000 0%, #3D1A00 100%)" }}
+    >
+      {/* Foto do gráfico de mercado (recorte em seta), à direita, encostando topo/rodapé, escala preservada */}
+      <img
+        src="/images/hero-realty.png"
+        alt=""
+        aria-hidden="true"
+        className="pointer-events-none absolute right-0 top-0 h-full w-auto object-contain object-right"
+      />
 
-  </div>
-</section>
+      <div className="relative z-10 flex w-full max-w-[524px] flex-col items-start gap-12 text-left">
+        {/* Lockup: logo + "Forward Thinking > Acquisitions" */}
+        <BxRealtyLockup className="h-[72px] w-auto sm:h-[96px]" />
 
-</body>
-</html>
+        {/* Paragraph */}
+        <p
+          className="max-w-[524px] text-left"
+          style={{
+            fontFamily: "var(--font-produkt), serif",
+            fontSize: "16px",
+            fontWeight: 400,
+            lineHeight: "1.4",
+            color: "rgba(255,255,255,0.72)",
+          }}
+        >
+          A real estate platform that buys undervalued and transitional
+          assets, then manages them on-site rather than handing them off.
+          That ownership work sharpens how BX Capital underwrites and turns
+          up deals for BX Equity.
+        </p>
+      </div>
+    </section>
+  );
+}

@@ -1,9 +1,9 @@
-import BxRealtyHero from "../components/BxRealtyHero";
+import BxRealtyHeroV3 from "../components/BxRealtyHeroV3";
 
 export default function Home() {
   return (
     <main>
-      <BxRealtyHero />
+      <BxRealtyHeroV3 />
     </main>
   );
 }

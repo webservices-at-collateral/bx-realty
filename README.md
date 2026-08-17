@@ -1,7 +1,8 @@
-# BX Realty — Landing Page
+# BX Realty v3 — Landing Page
 
-Projeto Next.js (App Router) + Tailwind CSS com a hero section "BX Realty",
-implementada a partir do Figma (node 62:76).
+Projeto Next.js (App Router) + Tailwind CSS com a hero section "BX Realty" v3
+(layout alinhado à esquerda, com foto de gráfico de mercado em recorte de seta),
+implementada a partir do Figma (node 74:86).
 
 ## Rodar localmente
 
@@ -31,11 +32,12 @@ vercel --prod
 
 ```
 app/
-  layout.js         # fontes (Produkt local + Inter via next/font)
-  page.js           # renderiza a hero section
-  globals.css       # Tailwind base
+  layout.js             # fonte Produkt local via next/font
+  page.js               # renderiza a hero section
+  globals.css           # Tailwind base
 components/
-  BxRealtyHero.jsx  # a section em si (logo SVG + textos + badge)
-public/fonts/
-  produkt-regular.woff2
+  BxRealtyHeroV3.jsx    # a section em si (lockup SVG + parágrafo)
+public/
+  fonts/produkt-regular.woff2
+  images/hero-realty.png   # imagem de fundo (gradiente + linhas + foto já compostos)
 ```
