@@ -85,7 +85,7 @@ export default function BxRealtyHero() {
             className="text-xs font-medium text-white"
             style={{
               fontFamily: "var(--font-produkt), Arial, sans-serif",
-              fontSize: "16px",
+              fontSize: "32px",
             }}
           >
             Coming soon
