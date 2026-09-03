@@ -111,10 +111,14 @@ export default function BxRealtyHeroV3() {
             color: "rgba(255,255,255,0.72)",
           }}
         >
-          A real estate platform that buys undervalued and transitional
-          assets, then manages them on-site rather than handing them off.
-          That ownership work sharpens how BX Capital underwrites and turns
-          up deals for BX Equity.
+          BX Realty is the real estate investment arm of BX Group, focused
+          on acquiring, developing, and managing high-quality multifamily &
+          commercial assets in key U.S. markets. The firm specializes in
+          identifying undervalued or transitional properties with
+          significant value-creation potential. Leveraging local expertise
+          and a data-driven approach, BX Realty delivers strong,
+          risk-adjusted returns through strategic acquisitions,
+          redevelopment, and adaptive reuse across all asset classes.
         </p>
       </div>
     </section>
