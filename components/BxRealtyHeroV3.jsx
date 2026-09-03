@@ -96,13 +96,13 @@ export default function BxRealtyHeroV3() {
           pointerEvents: "none",
         }}
       />
-      <div className="relative z-10 flex w-full max-w-[524px] flex-col items-start gap-12 text-left">
+      <div className="relative z-10 flex w-full max-w-[680px] flex-col items-start gap-12 text-left">
         {/* Lockup: logo + "Forward Thinking > Acquisitions" */}
         <BxRealtyLockup className="h-[72px] w-auto sm:h-[96px]" />
 
         {/* Paragraph */}
         <p
-          className="max-w-[524px] text-left"
+          className="max-w-[680px] text-left"
           style={{
             fontFamily: "var(--font-produkt), serif",
             fontSize: "20px",
